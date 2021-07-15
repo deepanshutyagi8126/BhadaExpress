@@ -1,0 +1,317 @@
+<app-header2></app-header2>
+
+
+<section class="headerHight dashboredAll">
+    <div class="container">
+        <div class="dashIn">
+            <ul>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/dashboard']">Dashboad</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/user-listing']">User Listing</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/vehicle']">Vehicles</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/orders']" class="active">Orders</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/stickers']">Stickers</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/tasks']">Tasks</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="myprofile">
+    <div class="container">
+        <div class="userInner">
+            <h2 class="third">Orders</h2>
+        </div>
+    </div>
+
+
+
+    <div class="overview">
+
+        <div class="filter">
+            <div class="container">
+                <div class="row alignItem">
+                    <div class="col-sm-8">
+                        <div class="filterInner">
+                            <label for="">FIlter</label>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <input type="date" class="form-control formControl2">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <input type="date" class="form-control formControl2">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group apply">
+                                        <a href="javascript:void(0)" class="btns">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="padding-top:12px">
+                        <ul class="nav nav-pills tablist" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#Today">Today</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#Week">This Week</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#Month">This Month</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vehicleListing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="listingLeft">
+                            <h2 class="small">Order Listing</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="filterInner">
+
+                            <div class="row">
+                                <div class="col-sm-4">
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group" style="position: relative;">
+                                        <input type="text" class="form-control formControl2" placeholder="User ID">
+                                        <span class="search"><i class="fa fa-search"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group apply">
+                                        <a href="javascript:void(0)" class="btns">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="vechicleListing">
+        <div class="container">
+            <div class="tableList">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Order Id</th>
+                                <th>UserName</th>
+                                <th>Number</th>
+                                <th>City & State</th>
+                                <th>Category</th>
+                                <th>Drop Type</th>
+                                <th>Uploaded On</th>
+                                <th>Status</th>
+
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody>
+                            <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                                <td>Deepanshu</td>
+                                <td>9825645451</td>
+                                <td>Meerut,U.P</td>
+                                <td>Truck</td>
+                                <td>Open</td>
+                                <td>08/06/2021</td>
+                                <td><span class="Pending">Pending</span></td>
+
+                                <td><span class="flexSpan">
+                                        <a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"
+                                                style="width: 22px;margin-right: 12px;"></a>
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#order"
+                                            class="assignDetail"><img src="assets/imgs/assign.svg" alt="assign">Assign
+                                            Order</a>
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                                <td>Deepanshu</td>
+                                <td>9825645451</td>
+                                <td>Meerut,U.P</td>
+                                <td>Truck</td>
+                                <td>Open</td>
+                                <td>08/06/2021</td>
+                                <td><span class="active">Active</span></td>
+
+                                <td><span class="flexSpan">
+                                        <a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"
+                                                style="width: 22px;margin-right: 12px;"></a>
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#order"
+                                            class="assignDetail"><img src="assets/imgs/assign.svg" alt="assign">Assign
+                                            Order</a>
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                                <td>Deepanshu</td>
+                                <td>9825645451</td>
+                                <td>Meerut,U.P</td>
+                                <td>Truck</td>
+                                <td>Open</td>
+                                <td>08/06/2021</td>
+                                <td><span class="Completed">Completed</span></td>
+
+                                <td><span class="flexSpan">
+                                        <a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"
+                                                style="width: 22px;margin-right: 12px;"></a>
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#order"
+                                            class="assignDetail"><img src="assets/imgs/assign.svg" alt="assign">Assign
+                                            Order</a>
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                                <td>Deepanshu</td>
+                                <td>9825645451</td>
+                                <td>Meerut,U.P</td>
+                                <td>Truck</td>
+                                <td>Open</td>
+                                <td>08/06/2021</td>
+                                <td><span class="active">Active</span></td>
+
+                                <td><span class="flexSpan">
+                                        <a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"
+                                                style="width: 22px;margin-right: 12px;"></a>
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#order"
+                                            class="assignDetail"><img src="assets/imgs/assign.svg" alt="assign">Assign
+                                            Order</a>
+                                    </span></td>
+                            </tr>
+                            <tr class="Breakdown">
+                                <td><span class="colorBlue">U-030</span></td>
+                                <td>Deepanshu</td>
+                                <td>9825645451</td>
+                                <td>Meerut,U.P</td>
+                                <td>Truck</td>
+                                <td>Open</td>
+                                <td>08/06/2021</td>
+                                <td><span>Offline</span></td>
+
+                                <td><span class="flexSpan">
+                                        <a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"
+                                                style="width: 22px;margin-right: 12px;"></a>
+
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                                <td>Deepanshu</td>
+                                <td>9825645451</td>
+                                <td>Meerut,U.P</td>
+                                <td>Truck</td>
+                                <td>Open</td>
+                                <td>08/06/2021</td>
+                                <td><span class="colorGreen">Active</span></td>
+
+                                <td><span class="flexSpan">
+                                        <a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"
+                                                style="width: 22px;margin-right: 12px;"></a>
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#order"
+                                            class="assignDetail"><img src="assets/imgs/assign.svg" alt="assign">Assign
+                                            Order</a>
+                                    </span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+            <div class="paginations paginations2">
+                <ul>
+                    <li><a href="javascript:void(0)">
+                            <</a></li>
+                    
+                    <li><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)" class="active">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li><a href="javascript:void(0)">6</a></li>
+                    <li><a href="javascript:void(0)">></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="order" role="dialog">
+        <div class="modal-dialog modalSign" style="max-width: 800px;">
+            <div class="modal-content">
+
+                <div class="modal-body" style="position: relative;">
+                    <!-- <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+                            alt="cancle"></button> -->
+
+                    <div class="AssignModal">
+                        <div class="assignTop">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control formControl2"
+                                            placeholder="Enter Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control formControl2"
+                                            placeholder="Enter Usernumber">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14008.493983013297!2d77.3668853!3d28.6260606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1625481005972!5m2!1sen!2sin"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-6 paddingzero">
+                                    <div class="form-group">
+                                        <select class="form-control formControl2">
+                                            <option value="">Driver Range</option>
+                                            <option value="">0 - 50</option>
+                                            <option value="">50 - 100</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="col-sm-6 paddingzero">
+                                    <div class="form-group Assignbtn">
+                                        <button class="btns black">Assign</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <app-footer>
+
+    </app-footer>

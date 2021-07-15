@@ -1,0 +1,265 @@
+<app-header2></app-header2>
+
+<section class="headerHight dashboredAll">
+    <div class="container">
+        <div class="dashIn">
+            <ul>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-dash']" class="btnHover1"><span>Dashboad</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-driver']" class="btnHover1"><span>Drivers</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-vehicle']" class="btnHover1"><span>Vehicles</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-order']" class="btnHover1"><span>Orders</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-stickers']" class="btnHover1"><span>Stickers</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-aacount']" class="btnHover1"><span>My Account</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="userListing">
+    <div class="container">
+        <div class="userInner">
+            <h2 class="third">Stickers</h2>
+      
+        </div>
+        <div class="filter">
+
+            <div class="row alignItem">
+                <div class="col-sm-8">
+                    <div class="filterInner">
+                        <label for="">FIlter</label>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="date" class="form-control formControl2">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="date" class="form-control formControl2">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group apply">
+                                    <a href="javascript:void(0)" class="btns">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="padding-top:12px">
+                    <ul class="nav nav-pills tablist" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#Today">Today</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#Week">This Week</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#Month">This Month</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="overviewsAll">
+    <div class="container">
+        <div class="Alloveriew">
+            <h2 class="small">Tasks Overview</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>Total Stickers Request</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>Pending Request</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>Active Request</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>Completed Request</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>Rejected Request</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="vehicleListing" style="padding: 25px 0px 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="listingLeft">
+                    <h2 class="small">Tasks Listing</h2>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="filterInner">
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                        
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group" style="position: relative;">
+                                <input type="text" class="form-control formControl2" placeholder="User ID">
+                                <span class="search"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group apply">
+                                <a href="javascript:void(0)" class="btns">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="UswrList">
+    <div class="container">
+        <div class="userTable">
+            <h2 class="small">User Listing</h2>
+            <div class="tableList">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <th>Req ID</th>
+                        <th>User ID</th>
+                        <th>User Name</th>
+                        <th>Number</th>
+                        <th>Location</th>
+                        <th>Vehicle Type</th>
+                        <th>Body Type</th>
+                        <th>Requested On</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                          <td><span class="colorBlue">R-030</span></td>        
+                          <td>Deepanshu</td>
+                          <td>9825645451</td>
+                          <td>Meerut,U.P</td>
+                          <td>Truck</td>
+                          <td>Open</td>
+                          <td>08/06/2021</td>
+                          <td><span class="Pending">Pending</span></td>
+                       
+                          <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                          <td><span class="colorBlue">R-030</span></td>        
+                          <td>Deepanshu</td>
+                          <td>9825645451</td>
+                          <td>Meerut,U.P</td>
+                          <td>Truck</td>
+                          <td>Open</td>
+                          <td>08/06/2021</td>
+                          <td><span class="active">Active</span></td>
+                       
+                          <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                            </tr>  <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                          <td><span class="colorBlue">R-030</span></td>        
+                          <td>Deepanshu</td>
+                          <td>9825645451</td>
+                          <td>Meerut,U.P</td>
+                          <td>Truck</td>
+                          <td>Open</td>
+                          <td>08/06/2021</td>
+                          <td><span class="Pending">Pending</span></td>
+                       
+                          <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                            </tr>  <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                          <td><span class="colorBlue">R-030</span></td>        
+                          <td>Deepanshu</td>
+                          <td>9825645451</td>
+                          <td>Meerut,U.P</td>
+                          <td>Truck</td>
+                          <td>Open</td>
+                          <td>08/06/2021</td>
+                          <td><span class="Completed">Completed</span></td>
+                       
+                          <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                            </tr>  <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                          <td><span class="colorBlue">R-030</span></td>        
+                          <td>Deepanshu</td>
+                          <td>9825645451</td>
+                          <td>Meerut,U.P</td>
+                          <td>Truck</td>
+                          <td>Open</td>
+                          <td>08/06/2021</td>
+                          <td><span class="Rejected">Rejected</span></td>
+                       
+                          <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                            </tr>
+        
+                        </tbody>
+                    </table>
+                </div>
+
+             
+            </div>
+            <div class="paginations paginations2"> 
+                <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li><a href="javascript:void(0)"  class="colorBlack"><</a></li>
+                    <li><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)" class="active">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li><a href="javascript:void(0)">6</a></li>
+                    <li><a href="javascript:void(0)" class="colorBlack">></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer>
+
+</app-footer>

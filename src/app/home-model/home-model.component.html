@@ -1,0 +1,667 @@
+<!-- login singup model code start -->
+<div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal-dialog modalSign">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="loginMod">
+          <div class="loginLeft">
+            <h2 class="small">Login into BhadaExpress</h2>
+            <p class="small">Enter your below details:</p>
+
+            <form action="" class="formMargin">
+              <div class="form-group" style="position: relative;">
+                <span class="userpo"><img src="assets/imgs/user2.svg" alt="user"></span>
+                <select class="form-control formControl2 padding40">
+                  <option>Select your profile</option>
+                  <option>Operator</option>
+                  <option>Employee</option>
+                  <option>Customer</option>
+                </select>
+              </div>
+              <div class="form-group" style="position: relative;">
+                 <span class="userpo"><img src="assets/imgs/phone.svg" style="width: 75%;" alt="user"></span> 
+                <input type="phone" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+              </div>
+              <div class="formbtn">
+                <button class="btns" data-dismiss="modal" data-toggle="modal" data-target="#myModal3">Login</button>
+              </div>
+              <div class="orlogin">
+                <h5><span>Or Login via</span></h5>
+                <ul>
+                  <li><a href="javascript:void(0)"><img src="assets/imgs/facebook.svg" alt="fb"></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/imgs/google.svg" alt="fb"></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/imgs/apple.svg" alt="fb"></a></li>
+                </ul>
+                <h6>Don't have an Account? <a href="javascript:void(0)" data-dismiss="modal" data-toggle="modal"
+                    data-target="#myModal4">Sign up</a></h6>
+              </div>
+            </form>
+          </div>
+          <div class="loginRight">
+            <h2 class="third">Hello,</h2>
+            <p class="head">Enter your personal Details <br>
+              To Start Your Journey with US</p>
+            <div class="truckImg">
+              <img src="assets/imgs/truck_green.png" alt="green" style="width: 80%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- login Sign up model code end -->
+
+<!-- otp model code start -->
+<div class="modal fade" id="myModal3" role="dialog">
+  <div class="modal-dialog modalSign">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="loginMod">
+          <div class="loginLeft">
+            <h2 class="small">OTP Verification</h2>
+            <p class="small">Enter your register mobile number</p>
+
+            <form action="" class="formMargin">
+
+              <div class="form-group" style="position: relative;">
+                 <span class="userpo"><img src="assets/imgs/phone.svg" style="width: 75%;" alt="user"></span>
+                <input type="phone" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+              </div>
+              <div class="sendBtn">
+                <a href="javascript:void(0)">Send OTP</a>
+              </div>
+              <div class="sendnumber">
+                <h5>We've sent you a 6 digit verification code <br> +91 975xx xxx56</h5>
+              </div>
+              <div class="otpform" style="padding-bottom: 15px;">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+              </div>
+              <div class="formbtn">
+                <h4>01:44</h4>
+                <button class="btns showDrop" >Submit</button>
+              </div>
+              <div class="sendBtn resend">
+                <a href="javascript:void(0)">Resend Code</a>
+              </div>
+              <div class="showProto">
+                <ul>
+                  <li><a  data-dismiss="modal" [routerLink]="['/operator-dash']" >Login As Operator</a></li>
+                  <li><a  data-dismiss="modal" [routerLink]="['/dashboard']">Login As Employee</a></li>
+                  <li><a  data-dismiss="modal" [routerLink]="['/my-order']" >Login As Customer</a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+          <div class="loginRight" style="margin: 0;">
+
+            <div class="truckImg otpimg">
+              <img src="assets/imgs/otp.svg" alt="green">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!--  otp up model code end -->
+
+<!--  singup model code start -->
+<div class="modal fade" id="myModal4" role="dialog">
+  <div class="modal-dialog modalSign">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="loginMod">
+          <div class="loginLeft">
+            <h2 class="small">Create an Account</h2>
+            <p class="small">Enter your below details:</p>
+
+            <form action="" class="formMargin">
+              <div class="form-group" style="position: relative;">
+                <span class="userpo"><img src="assets/imgs/user2.svg" alt="user"></span>
+                <select class="form-control formControl2 padding40">
+                  <option>Select your profile</option>
+                  <option>Operator</option>
+                  <option>Employee</option>
+                  <option>Customer</option>
+                </select>
+              </div>
+              <div class="form-group" style="position: relative;">
+                 <span class="userpo"><img src="assets/imgs/phone.svg" alt="user" style="width:75%"></span>
+                <input type="phone" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+              </div>
+              <div class="formbtn">
+                <button class="btns" data-dismiss="modal" data-toggle="modal" data-target="#myModal5">Signup</button>
+              </div>
+              <div class="orlogin">
+                <h5><span>Or Signup via</span></h5>
+                <ul>
+                  <li><a href="javascript:void(0)"><img src="assets/imgs/facebook.svg" alt="fb"></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/imgs/google.svg" alt="fb"></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/imgs/apple.svg" alt="fb"></a></li>
+                </ul>
+                <h6>Already have an Account? <a href="javascript:void(0)" data-dismiss="modal" data-toggle="modal"
+                    data-target="#myModal2">Sign in</a></h6>
+              </div>
+            </form>
+          </div>
+          <div class="loginRight">
+            <h2 class="third">Hello,</h2>
+            <p class="head">Enter your personal Details <br>
+              To Start Your Journey with US</p>
+            <div class="truckImg">
+              <img src="assets/imgs/truck_green.png" alt="green" style="width: 80%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- login Sign up model code end -->
+
+<!-- otp model code start -->
+<div class="modal fade" id="myModal5" role="dialog">
+  <div class="modal-dialog modalSign">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="loginMod">
+          <div class="loginLeft">
+            <h2 class="small">OTP Verification</h2>
+            <p class="small">Enter your register mobile number</p>
+
+            <form action="" class="formMargin">
+
+              <div class="form-group" style="position: relative;">
+                <!-- <span class="userpo"><img src="assets/imgs/user2.svg" alt="user"></span> -->
+                <input type="phone" class="form-control formControl2" placeholder="Enter Mobile Number">
+              </div>
+              <div class="sendBtn">
+                <a href="javascript:void(0)">Send OTP</a>
+              </div>
+              <div class="sendnumber">
+                <h5>We've sent you a 6 digit verification code <br> +91 975xx xxx56</h5>
+              </div>
+              <div class="otpform" style="padding-bottom: 15px;">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+              </div>
+              <div class="formbtn">
+                <h4>01:44</h4>
+                <button class="btns" data-dismiss="modal" data-toggle="modal" data-target="#myModal6">Submit</button>
+              </div>
+              <div class="sendBtn resend">
+                <a href="javascript:void(0)">Resend Code</a>
+              </div>
+            </form>
+          </div>
+          <div class="loginRight" style="margin: 0;">
+
+            <div class="truckImg otpimg">
+              <img src="assets/imgs/otp.svg" alt="green">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!--  otp up model code end -->
+
+<!-- profile model code start -->
+<div class="modal fade" id="myModal6" role="dialog" style="
+    overflow-y: scroll;">
+  <div class="modal-dialog modalSign" style="margin: 50px auto;height: auto;">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="profileModal" style="padding: 75px;">
+          <h2 class="small">Complete Profile</h2>
+          <form action="" class="formMargin">
+            <div class="row">
+              <div class="col-sm-6">
+
+                <div class="form-group" style="position: relative;">
+                  <span class="userpo"><img src="assets/imgs/user2.svg" alt="user"></span>
+                  <input type="text" class="form-control formControl2 padding40" placeholder="First Name">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group" style="position: relative;">
+                  <span class="userpo"><img src="assets/imgs/user2.svg" alt="user"></span>
+                  <input type="text" class="form-control formControl2 padding40" placeholder="Last Name">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group" style="position: relative;">
+                  <span class="userpo"><img src="assets/imgs/email.svg" alt="user"></span>
+                  <input type="text" class="form-control formControl2 padding40" placeholder="Email Address">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <select class="form-control formControl2">
+                    <option value="">Select City</option>
+                    <option value="">Meerut</option>
+                    <option value="">Noida</option>
+                    <option value="">Hapur</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="col-sm-12 paddingzero">
+                      <div class="form-group" style="position: relative;">
+
+                        <input type="text" class="form-control formControl2 " placeholder="Enter PAN Number">
+                      </div>
+                    </div>
+                    <div class="new new2">
+
+                      <div class="form-group ">
+                        <input type="checkbox" id="html">
+                        <label for="html" class="checkClick">GST Details <span class="colorgray">(Optional)
+                          </span></label>
+                      </div>
+                    </div>
+                    <div class="checkShow">
+                      <div class="col-sm-12 paddingzero">
+                        <div class="form-group">
+                          <input type="text" class="form-control formControl2" placeholder="Enter GST Number">
+
+                        </div>
+                      </div>
+                      <div class="col-sm-12 paddingzero">
+                        <div class="form-group">
+                          <input type="text" class="form-control formControl2" placeholder="Enter GST Name">
+
+                        </div>
+                      </div>
+                      <div class="col-sm-12 paddingzero">
+                        <div class="form-group">
+                          <input type="text" class="form-control formControl2" placeholder="GST Address">
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-sm-12 paddingzero">
+                      <div class="form-group">
+                        <span class="userpo"><img src="assets/imgs/user2.svg" alt="user"></span>
+                        <input type="text" class="form-control formControl2 padding40"
+                          placeholder="Referral Code (Optional)">
+
+                      </div>
+                    </div>
+                    <div class="new new2">
+
+                      <div class="form-group ">
+                        <input type="checkbox" id="html2">
+                        <label for="html2" class="checkClick" data-dismiss="modal" data-toggle="modal"
+                          data-target="#myModal7">I am accepting the <span class="colorBlue">EULA Agreement
+                          </span></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 paddingzero">
+                      <div class="formbtn">
+                        <button class="btns" data-dismiss="modal" [routerLink]="['/my-order']">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="truckImg">
+                      <img src="assets/imgs/truck1.png" alt="truck" width="70%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!--  profile up model code end -->
+
+<!-- otp model code start -->
+<div class="modal fade" id="myModal7" role="dialog">
+  <div class="modal-dialog modalSign">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class=" Agreement profileModal" style="padding: 75px; text-align: center;">
+          <h2 class="small"><span data-dismiss="modal" data-toggle="modal" data-target="#myModal6"><i
+                class="fa fa-arrow-left"></i></span> EULA Agreement</h2>
+          <img src="assets/imgs/agree.svg" alt="agree" style="width:140px;margin: 10px auto 30px;">
+          <div class="modalPara">
+            <p class="head">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et
+              dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+              sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore.
+            </p>
+            <p class="head">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit
+              amet,
+              consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat,
+              sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!--  otp up model code end -->
+
+<!-- Enter Sender Details code start -->
+
+<div class="modal fade" id="sender" role="dialog">
+  <div class="modal-dialog modalSign">
+    <div class="modal-content" style="max-width: 800px;">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="senderDetails">
+          <h2 class="small">Enter Sender Details</h2>
+          <p>Enter below details to get location on MAP:</p>
+
+          <div class="senderForm" style="width: 50%;margin: 75px auto;">
+            <div class="form-group " style="position: relative;">
+              <span class="userpo">
+                <img src="assets/imgs/phone.svg" alt="phone" style="width: 75%;">
+              </span>
+              <input type="text" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+            </div>
+            <div class="form-group " style="position: relative;">
+              <span class="userpo">
+                <img src="assets/imgs/phone.svg" alt="phone" style="width: 75%;">
+              </span>
+              <input type="text" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+            </div>
+            <div class="form-group formBtn">
+              <button class="btns black">Add Details</button>
+            </div>
+          </div>
+          <p class="head small">Note: <span>Driver will contact on sender details at pickup location</span></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- Enter Sender Details code end -->
+
+<!-- Enter Sender Details code start -->
+
+<div class="modal fade" id="reciver" role="dialog">
+  <div class="modal-dialog modalSign">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="senderDetails">
+          <h2 class="small">Enter Reciver Details</h2>
+          <p>Enter below details to get location on MAP:</p>
+
+          <div class="senderForm" style="width: 50%;margin: 75px auto;">
+            <div class="form-group " style="position: relative;">
+              <span class="userpo">
+                <img src="assets/imgs/phone.svg" alt="phone" style="width: 75%;">
+              </span>
+              <input type="text" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+            </div>
+            <div class="form-group " style="position: relative;">
+              <span class="userpo">
+                <img src="assets/imgs/phone.svg" alt="phone" style="width: 75%;">
+              </span>
+              <input type="text" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+            </div>
+            <div class="form-group formBtn">
+              <button class="btns black">Add Details</button>
+            </div>
+          </div>
+          <p class="head small">Note: <span>Driver will contact on sender details at pickup location</span></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- Enter Sender Details code end -->
+
+<!-- Enter Location code start -->
+
+<div class="modal fade" id="Location" role="dialog">
+  <div class="modal-dialog modalSign" style="height: auto;
+  margin: 70px auto;">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="senderDetails Location">
+          <h2 class="small">Location</h2>
+          <p>Enter below details to get location on MAP:</p>
+
+
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14008.493983013297!2d77.3668853!3d28.6260606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1625549857435!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="savedAddress">
+        <h2 class="small">Saved Address</h2>
+        <div class="radioAll">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="radio">
+                <input id="radio-1" name="radio" type="radio" checked>
+                <label for="radio-1" class="radio-label">
+                  <div class="addressDetails addressDetails3">
+                    <h3>Home</h3>
+                    <h2>Pradeep Gautam</h2>
+                    <p>H-146, 147, Sector 63 Rd, H Block, Sector 63, Noida, Uttar Pradesh 201307</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="radio">
+                <input id="radio-2" name="radio" type="radio" >
+                <label for="radio-2" class="radio-label">
+                  <div class="addressDetails addressDetails3">
+                    <h3>Office</h3>
+                    <h2>Pradeep Gautam</h2>
+                    <p>H-146, 147, Sector 63 Rd, H Block, Sector 63, Noida, Uttar Pradesh 201307</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="radio">
+                <input id="radio-3" name="radio" type="radio" >
+                <label for="radio-3" class="radio-label">
+                  <div class="addressDetails addressDetails3">
+                    <h3>Address</h3>
+                    <h2>Pradeep Gautam</h2>
+                    <p>H-146, 147, Sector 63 Rd, H Block, Sector 63, Noida, Uttar Pradesh 201307</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <select class="form-control formControl2">
+                <option value="">Select Country</option>
+                <option value="">India</option>
+                <option value="">U.S</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <select class="form-control formControl2">
+                <option value="">Select State</option>
+                <option value="">U.P</option>
+                <option value="">Delhi</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <select class="form-control formControl2">
+                <option value="">Select State</option>
+                <option value="">Meerut</option>
+                <option value="">Noida</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input type="text" class="form-control formControl2" placeholder="Enter Zipcode">
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form-group">
+              <textarea class="form-control formControl2" rows="4" placeholder="Enter Address"></textarea>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form-group donrBtn">
+              <button class="btns black">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Enter Location code end -->
+
+<!-- Enter Go for Confirmation code start -->
+
+<div class="modal fade" id="Confirmation" role="dialog">
+  <div class="modal-dialog modalSign" style="max-width: 800px;">
+    <div class="modal-content">
+
+      <div class="modal-body" style="position: relative;">
+        <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/closeb.png"
+            alt="cancle"></button>
+
+        <div class="senderDetails">
+          <h2 class="small">Enter Your Mobile Number</h2>
+
+          <div class="senderForm" style="width: 50%;margin: 75px auto;">
+            <div class="form-group " style="position: relative;">
+              <span class="userpo">
+                <img src="assets/imgs/phone.svg" alt="phone" style="width: 75%;">
+              </span>
+              <input type="text" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+            </div>
+         
+            <div class="form-group formBtn">
+              <button class="btns black">Continue</button>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- Enter Go for Confirmation code end -->
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog" style="max-width: 700px;">
+
+      <div class="modal-content">
+
+          <div class="modal-body bodypadd" style="position: relative;">
+              <button type="button" class="close closeed" data-dismiss="modal"><img src="assets/imgs/cancel.png" alt="cancle"></button>
+             
+              <div class="modalBody">
+                  <h2>Form Submitted</h2>
+                  <div class="clock">
+                      <img src="assets/imgs/clock.svg" alt="clock">
+                  </div>
+                  <p>Congratulations, Your request is send to admin.</p>
+                  <span><i>For</i></span>
+                  <h3>Booking Id: #154328</h3>
+                  <a href="javascript:void(0)" class="btns black homepage">Go To Home Page</a>
+                  <h6>The admin will contact you within 24 hours.</h6>
+                  <h6><b>Note:</b> <i>You can see your order into the upcoming orders after giving confirmation over the
+                      estimated cost provided by the admin over the call.</i></h6>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+</div>

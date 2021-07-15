@@ -1,0 +1,270 @@
+<app-header2></app-header2>
+
+
+<section class="headerHight dashboredAll">
+    <div class="container">
+        <div class="dashIn">
+            <ul>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/dashboard']">Dashboad</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/user-listing']" class="active">User Listing</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/vehicle']">Vehicles</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/orders']">Orders</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/stickers']">Stickers</a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/tasks']">Tasks</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="userListing">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <form action="#" class="newUserss">
+            <div class="userInner">
+                <h2 class="third">Add a New user</h2>   
+            </div>
+                <div class="SelectUser">
+                    <h2>Select User Type</h2>
+                </div>
+             
+           <div class="customRadio">
+            <p [routerLink]="['/add-customer']">
+                <input type="radio" id="test1" name="radio-group" >
+                <label for="test1" class="active">Customer</label>
+              </p>
+              <p [routerLink]="['/user-driver']">
+                <input type="radio" id="test2" name="radio-group" >
+                <label for="test2">Driver</label>
+              </p>
+              <p  [routerLink]="['/userlisting-Operator']">
+                <input type="radio" id="test3" name="radio-group" checked>
+                <label for="test3">Operator</label>
+              </p>
+           </div>
+           <p class="below">Enter Personal Detail:</p>
+
+           <div class="row">
+               <div class="col-sm-6">
+                   <div class="form-group" style="position: relative;">
+                       <span class="userpo">
+                           <img src="assets/imgs/user2.svg" alt="user">
+                       </span>
+                       <input type="text" class="form-control formControl2 padding40" placeholder="First Name">
+                   </div>
+                   <div class="form-group" style="position: relative;">
+                    <span class="userpo">
+                        <img src="assets/imgs/user2.svg" alt="user">
+                    </span>
+                    <input type="text" class="form-control formControl2 padding40" placeholder="Last Name">
+                </div>
+               </div>
+               <div class="col-sm-6">
+                <div class="form-group" style="display: inline-block;">
+                    <div class="yes">
+                        <span class="btn_upload">
+                            <input type="file" id="imag1" title=""
+                                class="input-img" />
+                            <i class="fa fa-upload"></i>
+                            <p>Upload video (Optional)</p>
+                        </span>
+                        <img id="ImgPreview1" src="" class="preview1" />
+                        <input type="button" id="removeImage1" value="x"
+                            class="btn-rmv1" />
+                    </div>
+
+                </div>
+                </div>
+            <div class="col-sm-6">
+    
+                <div class="form-group" style="position: relative;">
+                    <span class="userpo">
+                        <img src="assets/imgs/email.svg" alt="user">
+                    </span>
+                    <input type="text" class="form-control formControl2 padding40" placeholder="Email Address">
+                </div>
+            
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group" style="position: relative;">
+                    <span class="userpo">
+                        <img src="assets/imgs/phone.svg" alt="user" style="width: 75%;">
+                    </span>
+                    <input type="text" class="form-control formControl2 padding40" placeholder="Enter Mobile Number">
+                </div>
+            </div>
+   
+      <div class="col-sm-6">
+          <div class="form-group"  style="position: relative;">
+            <span class="userpo">
+                <img src="assets/imgs/phone.svg" alt="user" style="width: 75%;">
+            </span>
+              <input type="text" class="form-control formControl2 padding40" placeholder="Enter Emergency Number">
+          </div>
+      </div>
+      <div class="col-sm-6">
+          <div class="form-group">
+            <input  placeholder="Enter D.O.B" class="form-control formControl2" type="text" onfocus="(this.type='date')" id="date">
+          
+          </div>
+      </div>
+      <div class="col-sm-6">
+          <div class="form-group">
+              <select class="form-control formControl2">
+                  <option>Select State</option>
+                  <option value="">U.P</option>
+                  <option value="">Delhi</option>
+                  <option value="">Goa</option>
+              </select>
+          </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+            <select class="form-control formControl2">
+                <option>Select City</option>
+                <option value="">Meerut</option>
+                <option value="">Noida</option>
+                <option value="">Hapur</option>
+            </select>
+        </div>
+    </div>
+<div class="col-sm-12">
+    <p class="below">Enter Bank Details:</p>
+</div>
+    <div class="col-sm-6">
+  
+        <div class="form-group"  style="position: relative;">
+          <span class="userpo">
+              <img src="assets/imgs/user2.svg" alt="user">
+          </span>
+            <input type="text" class="form-control formControl2 padding40" placeholder="Enter Account Holder Name">
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group"  style="position: relative;">
+          <span class="userpo">
+              <img src="assets/imgs/phone.svg" alt="user" style="width: 75%;">
+          </span>
+            <input type="text" class="form-control formControl2 padding40" placeholder="Enter Account Number">
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group" style="position: relative;">
+      
+            <input type="text" class="form-control formControl2 " placeholder="Enter IFSC Code">
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <select class="form-control formControl2">
+                    <option>Select Branch Location</option>
+                    <option value="">Meerut</option>
+                    <option value="">Noida</option>
+                    <option value="">Hapur</option>
+                </select>
+            </div>
+      
+     </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group" style="display: inline-block;">
+            <div class="yes">
+                <span class="btn_upload">
+                    <input type="file" id="imag4" title=""
+                        class="input-img" />
+                    <i class="fa fa-upload"></i>
+                    <p>Upload video (Optional)</p>
+                </span>
+                <img id="ImgPreview4" src="" class="preview4" />
+                <input type="button" id="removeImage4" value="x"
+                    class="btn-rmv4" />
+            </div>
+
+        </div>
+        </div>
+    <div class="col-sm-12">
+        <p class="below">Enter Document Detail:</p>
+    </div>
+ 
+        <div class="col-sm-6">
+            <div class="form-group" >
+          
+                <input type="text" class="form-control formControl2 " placeholder="Enter Aadhar Card Number">
+            </div>
+            <div class="form-group" >
+          
+                <input type="text" class="form-control formControl2 " placeholder="Enter Company Name">
+            </div>
+            <div class="form-group" >
+          
+                <input type="text" class="form-control formControl2 " placeholder="Enter Company Address">
+            </div>
+      
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group" style="display: inline-block;">
+                <div class="yes">
+                    <span class="btn_upload">
+                        <input type="file" id="imag3" title=""
+                            class="input-img" />
+                        <i class="fa fa-upload"></i>
+                        <p>Upload video (Optional)</p>
+                    </span>
+                    <img id="ImgPreview3" src="" class="preview3" />
+                    <input type="button" id="removeImage3" value="x"
+                        class="btn-rmv3" />
+                </div>
+
+            </div>
+            </div>
+  
+           </div>
+  
+        
+          <div class="new new2">
+
+            <div class="form-group ">
+              <input type="checkbox" id="Agreement"> 
+              <label for="Agreement" class="checkClick">GST Details <span class="colorgray">(Optional)
+                </span></label>
+            </div>
+          </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group" >
+          
+                <input type="text" class="form-control formControl2 " placeholder="Enter GST Number">
+            </div>
+       
+      
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group" style="display: inline-block;">
+                <div class="yes">
+                    <span class="btn_upload">
+                        <input type="file" id="imag2" title=""
+                            class="input-img" />
+                        <i class="fa fa-upload"></i>
+                        <p>Upload video (Optional)</p>
+                    </span>
+                    <img id="ImgPreview2" src="" class="preview2" />
+                    <input type="button" id="removeImage2" value="x"
+                        class="btn-rmv2" />
+                </div>
+
+            </div>
+            </div>
+    </div>
+          <div class="form-group upd">
+              <button class="btns black">Upload Operator</button>
+          </div>
+                </form>
+        </div>
+    </div>
+        </div>
+    
+</section>
+
+
+<app-footer>
+
+</app-footer>

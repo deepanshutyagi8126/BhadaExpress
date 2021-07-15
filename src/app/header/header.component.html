@@ -1,0 +1,39 @@
+
+<header class="header1">
+    <div class="container">
+        <div class="headerInner">
+            <div class="headerLogo">
+                <a [routerLink]="['/']">
+                    <img src="assets/imgs/logo.png" alt="logo" style="width: 175px;">
+                </a>
+            </div>
+            <div class="headerRight">
+                <ul>
+                    <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']" class="hhover">Home</a></li>
+                    <li [routerLinkActive]="['active']"><a [routerLink]="['/why-us']" class="hhover">Why Us</a></li>
+                    <li [routerLinkActive]="['active']"><a [routerLink]="['/careers']" class="hhover">Careers</a></li>
+                    <li [routerLinkActive]="['active']"><a [routerLink]="['/our-service']" class="hhover">Our Services</a></li>
+                    <li [routerLinkActive]="['active']"><a [routerLink]="['/app-features']" class="hhover">App Features</a></li>
+                </ul>
+                <ul>
+                    <li class="joinPos"><a href="javascript:void(0)" class="joinUs">
+                        <span class="truckss"><img src="assets/imgs/truck.svg" alt="truck" style="max-width: 55px;"></span>
+                        <span class="drive">Drive With Us</span>
+                        <span class="joinBtn">Join Us</span>
+                    </a>
+                <div class="joinDrop">
+                    <ul>
+                        <li><a [routerLink]="['/join-driver']">As Driver</a></li>
+                        <li><a [routerLink]="['/join-associate']">As Associate</a></li>
+                        <li><a [routerLink]="['/join-partner']">As Our Partner</a></li>
+                    </ul>
+                </div>
+                </li>
+                    <li  style="margin: 0;"><a href="javascript:void(0)"  data-toggle="modal" data-target="#myModal2" class="logincolor">Login/Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<app-home-model></app-home-model>

@@ -1,0 +1,412 @@
+<app-header2></app-header2>
+<div class="userInner2">
+    <div class="container">
+        <div class="userInner">
+            <h2 class="third">My Accounts</h2>
+            <div class="logout">
+                <a [routerLink]="['/']" class="btns">Logout</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section class="myprofile">
+    <div class="profileheading">
+        <div class="container">
+            <h2>My Profile Information</h2>
+        </div>
+    </div>
+
+    <div class="aboutProfile">
+        <div class="container">
+            <div class="profileInner">
+                <div class="profileLeft">
+                    <div class="profileImg">
+                        <img src="assets/imgs/profile.png" alt="profile">
+                    </div>
+                    <div class="leftContent">
+                        <h2>Deepanshu tyagi <span>(Emp ID: 0012PG4)</span></h2>
+                        <p><span><img src="assets/imgs/phone.svg" alt="phone"></span>+91 9865231470</p>
+                        <p><span><img src="assets/imgs/email.svg" alt="phone"></span>Pradeep@gmail.com</p>
+                        <p><span><img src="assets/imgs/location.svg" alt="phone"></span>New Delhi, India</p>
+                    </div>
+                </div>
+                <div class="ReferralLink">
+                    <p>Referral Link</p>
+                    <h5>http://www.bhadaexpress.com/ud8783 <span style="margin-left: 10px;"><img
+                                src="assets/imgs/copy.svg" alt="copy"></span></h5>
+                    <div class="avaliblty">
+                        <h2>Available Balance</h2>
+                        <h3>$1232.00</h3>
+                    </div>
+                    <a href="javascript:void(0)" [routerLink]="['/transcation-history']" >Transacton History</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gstInfo">
+    <div class="container">
+        <div class="gstIn">
+            <h2 class="small">GST Information</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter GST Number">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter GST Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="GST Address">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gstIn">
+            <h2 class="small">Other Information</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Company Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter PAN Number">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Company Address">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gstIn">
+            <h2 class="small">Enter Bank Details:</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Bank Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter IFSC Code">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control formControl2">
+                            <option value="">Select Branch Location</option>
+                            <option value="">Meerut</option>
+                            <option value="">Noida</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter Aadhar Card Number">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter Account Number">
+                    </div>
+                    <div class="form-group" style="display: inline-block;">
+                        <div class="yes">
+                            <span class="btn_upload">
+                                <input type="file" id="imag1" title="" class="input-img" />
+                                <i class="fa fa-upload"></i>
+                                <p>Upload video (Optional)</p>
+                            </span>
+                            <img id="ImgPreview1" src="" class="preview1" />
+                            <input type="button" id="removeImage1" value="x" class="btn-rmv1" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="setting">
+    <div class="profileheading">
+        <div class="container">
+            <h2>Settings</h2>
+        </div>
+    </div>
+    <div class="container" style="padding: 40px 0px;">
+        <div class="SelectUser">
+            <h2>Push Notifications</h2>
+        </div>
+
+        <div class="customRadio">
+            <p>
+                <input type="radio" id="Enable" name="radio-group" checked>
+                <label for="Enable" class="active">Enable</label>
+            </p>
+            <p>
+                <input type="radio" id="Disable" name="radio-group">
+                <label for="Disable">Disable</label>
+            </p>
+
+        </div>
+        <div class="SelectUser">
+            <h2>GST</h2>
+        </div>
+
+        <div class="customRadio">
+            <p>
+                <input type="radio" id="Enable2" name="radio-groupEnable" checked>
+                <label for="Enable2" class="active">Enable</label>
+            </p>
+            <p>
+                <input type="radio" id="Disable2" name="radio-groupEnable">
+                <label for="Disable2">Disable</label>
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section class="plan">
+    <div class="profileheading">
+        <div class="container">
+            <h2>My Subscription Plan</h2>
+        </div>
+    </div>
+    <div class="container" style="padding: 50px 0px;">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="planInner" style="padding: 36px;">
+                    <p>Annulay</p>
+                    <h2>1299.99 <span>/ year</span></h2>
+                    <span class="Pay">Pay using Credit/Debit Card</span>
+                    <p class="purchase">Purchased On <span>15/05/2021</span></p>
+                    <p class="purchase" style="    padding-top: 20px;">Expiry On <span>15/05/2021</span></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6" style="margin-bottom: 30px;">
+                        <div class="planInner Annulay">
+                            <p>Annulay</p>
+                            <h2>1299.99 <span>/ year</span></h2>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6" style="margin-bottom: 30px;">
+                        <div class="planInner Annulay">
+                            <p>Monthly</p>
+                            <h2>1299.99 <span>/ year</span></h2>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="planInner Annulay">
+                            <p>Quaterly</p>
+                            <h2>1299.99 <span>/ year</span></h2>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="planInner Annulay">
+                            <p>Half Yearly</p>
+                            <h2>1299.99 <span>/ year</span></h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="plan">
+    <div class="profileheading">
+        <div class="container">
+            <h2>Other Subscriptions</h2>
+        </div>
+    </div>
+    <div class="container" style="padding: 50px 0px;">
+
+
+        <div class="row">
+            <div class="col-sm-3" style="margin-bottom: 30px;">
+                <div class="planInner Annulay">
+                    <p>Annulay</p>
+                    <h2>1299.99 <span>/ year</span></h2>
+                    <a href="javascript:void(0)" class="subscribe">Click here to subscribe</a>
+                </div>
+            </div>
+            <div class="col-sm-3" style="margin-bottom: 30px;">
+                <div class="planInner Annulay">
+                    <p>Monthly</p>
+                    <h2>1299.99 <span>/ year</span></h2>
+                    <a href="javascript:void(0)" class="subscribe">Click here to subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="planInner Annulay">
+                    <p>Quaterly</p>
+                    <h2>1299.99 <span>/ year</span></h2>
+                    <a href="javascript:void(0)" class="subscribe">Click here to subscribe</a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="planInner Annulay">
+                    <p>Half Yearly</p>
+                    <h2>1299.99 <span>/ year</span></h2>
+                    <a href="javascript:void(0)" class="subscribe">Click here to subscribe</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="saveAddres">
+    <div class="profileheading">
+        <div class="container">
+            <h2>My Saved Address</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="savedAddress">
+            <div class="radioAll">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="radio">
+                            <input id="radio-new" name="radio-new" type="radio" checked>
+                            <label for="radio-new" class="radio-label">
+                                <div class="addressDetails">
+                                    <h3>Home</h3>
+                                    <h2>Pradeep Gautam</h2>
+                                    <p>H-146, 147, Sector 63 Rd, H Block, Sector 63, Noida, Uttar Pradesh 201307</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="radio">
+                            <input id="radio-new2" name="radio-new" type="radio">
+                            <label for="radio-new2" class="radio-label">
+                                <div class="addressDetails">
+                                    <h3>Office</h3>
+                                    <h2>Pradeep Gautam</h2>
+                                    <p>H-146, 147, Sector 63 Rd, H Block, Sector 63, Noida, Uttar Pradesh 201307</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="radio">
+                            <input id="radio-new3" name="radio-new" type="radio">
+                            <label for="radio-new3" class="radio-label">
+                                <div class="addressDetails">
+                                    <h3>Address</h3>
+                                    <h2>Pradeep Gautam</h2>
+                                    <p>H-146, 147, Sector 63 Rd, H Block, Sector 63, Noida, Uttar Pradesh 201307</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="Offers">
+    <div class="profileheading">
+        <div class="container">
+            <h2>My Offers</h2>
+        </div>
+    </div>
+
+    <div class="partners Offersinner">
+        <owl-carousel-o [options]="customOptionspt">
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                           <a href="javascript:void(0)" class="btns black btnHover1"><span>First50</span></a>
+                         
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                           <a href="javascript:void(0)" class="btns black btnHover1"><span>First50</span></a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                           <a href="javascript:void(0)" class="btns black btnHover1"><span>First50</span></a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                           <a href="javascript:void(0)" class="btns black btnHover1"><span>First50</span></a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                           <a href="javascript:void(0)" class="btns black btnHover1"><span>First50</span></a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                           <a href="javascript:void(0)" class="btns black btnHover1"><span>First50</span></a>
+                    </div>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+
+    </div>
+</section>
+
+
+<app-footer></app-footer>

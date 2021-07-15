@@ -1,0 +1,234 @@
+<app-header2></app-header2>
+
+
+<section class="headerHight dashboredAll">
+    <div class="container">
+        <div class="dashIn">
+            <ul>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-dash']" class="btnHover1"><span>Dashboad</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-driver']" class="btnHover1"><span>Drivers</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-vehicle']" class="btnHover1"><span>Vehicles</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-order']" class="btnHover1"><span>Orders</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-stickers']" class="btnHover1"><span>Stickers</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-aacount']" class="btnHover1"><span>My Account</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="overview">
+    <div class="profileheading">
+        <div class="container">
+            <h2>Overview</h2>
+        </div>
+       </div>
+       <div class="filter">
+           <div class="container">
+               <div class="row alignItem">
+                   <div class="col-sm-8">
+                     <div class="filterInner">
+                         <label for="">FIlter</label>
+                         <div class="row">
+                             <div class="col-sm-4">
+                                 <div class="form-group">
+                                     <input type="date" class="form-control formControl2">
+                                 </div>
+                             </div>
+                             <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="date" class="form-control formControl2">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group apply">
+                                    <a href="javascript:void(0)" class="btns">Apply</a>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                   </div>
+                   <div class="col-sm-4" style="padding-top:12px">
+                    <ul class="nav nav-pills tablist" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="pill" href="#Today">Today</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#Week">This Week</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#Month">This Month</a>
+                        </li>
+                      </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+</section>
+
+<section class="overviewsAll">
+    <div class="container">
+        <div class="Alloveriew">
+            <h2 class="small">Account Overview</h2>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview1.svg" alt="overview">
+                        </div>
+                        <p>Uploaded User</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview2.svg" alt="overview">
+                        </div>
+                        <p>Uploaded Drivers</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview3.svg" alt="overview">
+                        </div>
+                        <p>Uploaded Operators</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview4.svg" alt="overview">
+                        </div>
+                        <p>Uploaded Vehicles</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>Total Tasks</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>New Tasks</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>Completed Tasks</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview5.svg" alt="overview">
+                        </div>
+                        <p>Rejected Tasks</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- <section class="performanceGraph">
+    <div class="profileheading">
+        <div class="container">
+            <h2>Performance</h2>
+        </div>
+       </div>
+       <div class="container">
+        <div style="display: block; padding: 35px 0px;">
+            <canvas baseChart 
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+            </canvas>
+          </div>
+
+          <div style="display: block;padding: 35px 0px;">
+            <canvas baseChart
+              [data]="polarAreaChartData"
+              [labels]="polarAreaChartLabels"
+              [legend]="polarAreaLegend"
+              [chartType]="polarAreaChartType">
+            </canvas>
+          </div>
+       </div>
+</section> -->
+
+<section class="performanceGraph">
+    <div class="profileheading">
+        <div class="container">
+            <h2>Performance</h2>
+        </div>
+       </div>
+       <div class="container">
+        <div style="display: block; padding: 35px 0px;">
+            <!-- <canvas baseChart 
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+            </canvas> -->
+            <div id="chart">
+                <apx-chart
+                  [series]="chartOptions.series"
+                  [chart]="chartOptions.chart"
+                  [dataLabels]="chartOptions.dataLabels"
+                  [plotOptions]="chartOptions.plotOptions"
+                  [responsive]="chartOptions.responsive"
+                  [xaxis]="chartOptions.xaxis"
+                  [legend]="chartOptions.legend"
+                  [fill]="chartOptions.fill"
+                ></apx-chart>
+              </div>
+          </div>
+
+          <div style="display: block;padding: 35px 0px;margin: 0 auto;">
+            <div id="chart2" style="display: flex;justify-content: center;">
+                <apx-chart
+                  [series]="chartOptions2.series"
+                  [chart]="chartOptions2.chart"
+                  [labels]="chartOptions2.labels"
+                  [title]="chartOptions2.title"
+                  [theme]="chartOptions2.theme"
+                  [fill]="chartOptions2.fill"
+                  [yaxis]="chartOptions2.yaxis"
+                  [stroke]="chartOptions2.stroke"
+                  [legend]="chartOptions2.legend"
+                  [plotOptions]="chartOptions2.plotOptions"
+                ></apx-chart>
+              </div>
+          </div>
+       </div>
+</section>
+<div class="footerpadd">
+    <app-footer>
+
+    </app-footer>
+</div>

@@ -1,0 +1,282 @@
+<app-header2></app-header2>
+
+<section class="headerHight dashboredAll">
+    <div class="container">
+        <div class="dashIn">
+            <ul>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-dash']" class="btnHover1"><span>Dashboad</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-driver']" class="btnHover1"><span>Drivers</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-vehicle']" class="btnHover1"><span>Vehicles</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-order']" class="btnHover1"><span>Orders</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-stickers']" class="btnHover1"><span>Stickers</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-aacount']" class="btnHover1"><span>My Account</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="myprofile">
+    <div class="profileheading">
+        <div class="container">
+            <h2>My Profile Information</h2>
+        </div>
+    </div>
+
+    <div class="aboutProfile">
+        <div class="container">
+            <div class="profileInner">
+                <div class="profileLeft">
+                    <div class="profileImg">
+                        <img src="assets/imgs/profile.png" alt="profile">
+                    </div>
+                    <div class="leftContent">
+                        <h2>Deepanshu tyagi <span>(Emp ID: 0012PG4)</span></h2>
+                        <p><span><img src="assets/imgs/phone.svg" alt="phone"></span>+91 9865231470</p>
+                        <p><span><img src="assets/imgs/email.svg" alt="phone"></span>Pradeep@gmail.com</p>
+                        <p><span><img src="assets/imgs/location.svg" alt="phone"></span>New Delhi, India</p>
+                    </div>
+                </div>
+                <div class="ReferralLink">
+                    <div class="logout" style="    margin-bottom: 20px;">
+                        <a [routerLink]="['/']" class="btns">Logout</a>
+                    </div>
+                    <p>Referral Link</p>
+                    <h5 style="padding-top: 10px;
+                    ">http://www.bhadaexpress.com/ud8783 <span style="margin-left: 10px;"><img
+                                src="assets/imgs/copy.svg" alt="copy"></span></h5>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gstInfo">
+    <div class="container">
+        <div class="gstIn">
+            <h2 class="small">GST Information</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter GST Number">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter GST Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="GST Address">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gstIn">
+            <h2 class="small">Other Information</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Company Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter PAN Number">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Company Address">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gstIn">
+            <h2 class="small">Enter Bank Details:</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Bank Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter IFSC Code">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control formControl2">
+                            <option value="">Select Branch Location</option>
+                            <option value="">Meerut</option>
+                            <option value="">Noida</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter IFSC Code">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control formControl2" placeholder="Enter Aadhar Card Number">
+                    </div>
+                    <div class="form-group" style="display: inline-block;">
+                        <div class="yes">
+                            <span class="btn_upload">
+                                <input type="file" id="imag1" title="" class="input-img" />
+                                <i class="fa fa-upload"></i>
+                                <p>Upload video (Optional)</p>
+                            </span>
+                            <img id="ImgPreview1" src="" class="preview1" />
+                            <input type="button" id="removeImage1" value="x" class="btn-rmv1" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="plan">
+    <div class="profileheading">
+        <div class="container">
+            <h2>My Subscription Plan</h2>
+        </div>
+    </div>
+    <div class="container" style="padding: 50px 0px;">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="planInner" style="padding: 36px;">
+                    <p>Annulay</p>
+                    <h2>1299.99 <span>/ year</span></h2>
+                    <span class="Pay">Pay using Credit/Debit Card</span>
+                    <p class="purchase">Purchased On <span>15/05/2021</span></p>
+                    <p class="purchase" style="    padding-top: 20px;">Expiry On <span>15/05/2021</span></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6" style="margin-bottom: 30px;">
+                        <div class="planInner Annulay">
+                            <p>Annulay</p>
+                            <h2>1299.99 <span>/ year</span></h2>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6" style="margin-bottom: 30px;">
+                        <div class="planInner Annulay">
+                            <p>Monthly</p>
+                            <h2>1299.99 <span>/ year</span></h2>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="planInner Annulay">
+                            <p>Quaterly</p>
+                            <h2>1299.99 <span>/ year</span></h2>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="planInner Annulay">
+                            <p>Half Yearly</p>
+                            <h2>1299.99 <span>/ year</span></h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="Offers">
+    <div class="profileheading">
+        <div class="container">
+            <h2>My Offers</h2>
+        </div>
+    </div>
+
+    <div class="partners Offersinner">
+        <owl-carousel-o [options]="customOptionspt">
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                            <a href="javascript:void(0)" class="btns black">First50</a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                            <a href="javascript:void(0)" class="btns black">First50</a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                            <a href="javascript:void(0)" class="btns black">First50</a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                            <a href="javascript:void(0)" class="btns black">First50</a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                            <a href="javascript:void(0)" class="btns black">First50</a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="allOffers">
+                    <img src="assets/imgs/account.png" alt="account">
+                    <div class="allofCon">
+                        <h2 class="small">New Account</h2>
+                        <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                            laoreet. </p>
+                            <a href="javascript:void(0)" class="btns black">First50</a>
+                    </div>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+
+    </div>
+</section>
+
+
+<app-footer></app-footer>

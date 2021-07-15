@@ -1,0 +1,21 @@
+@media screen and (max-width: 1440px) and (min-width: 1000px) {
+    .bookingNow {
+        right: -8%;
+    }
+    .whyInner {
+        width: 40%;
+    }
+    .phone img {
+        width: 52%;
+        height: 82%;
+        margin-top: 20px;
+    }
+    .whyBgAll {
+        text-align: center;
+        padding: 60px 35px;
+    }
+    .bookingNow a {
+        right: 20px;
+        top: 18px;
+    }
+}

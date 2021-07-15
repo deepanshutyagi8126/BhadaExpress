@@ -1,0 +1,294 @@
+<app-header2></app-header2>
+<section class="headerHight dashboredAll">
+    <div class="container">
+        <div class="dashIn">
+            <ul>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-dash']" class="btnHover1"><span>Dashboad</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-driver']" class="btnHover1"><span>Drivers</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-vehicle']" class="btnHover1"><span>Vehicles</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-order']" class="btnHover1"><span>Orders</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-stickers']" class="btnHover1"><span>Stickers</span></a></li>
+                <li  [routerLinkActive]="['active']"><a [routerLink]="['/operator-aacount']" class="btnHover1"><span>My Account</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="userListing">
+    <div class="container">
+        <div class="userInner">
+            <h2 class="third">Driver</h2>
+        </div>
+        <div class="filter">
+
+            <div class="row alignItem">
+                <div class="col-sm-8">
+                    <div class="filterInner">
+                        <label for="">FIlter</label>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="date" class="form-control formControl2">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="date" class="form-control formControl2">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group apply">
+                                    <a href="javascript:void(0)" class="btns">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="padding-top:12px">
+                    <ul class="nav nav-pills tablist" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#Today">Today</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#Week">This Week</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#Month">This Month</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="overviewsAll">
+    <div class="container">
+        <div class="Alloveriew">
+            <h2 class="small">Account Overview</h2>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview1.svg" alt="overview">
+                        </div>
+                        <p>Uploaded User</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview1.svg" alt="overview">
+                        </div>
+                        <p>Active Users</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview1.svg" alt="overview">
+                        </div>
+                        <p>Inactive Users</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="accountFirst">
+                        <div class="overImg">
+                            <img src="assets/imgs/overview1.svg" alt="overview">
+                        </div>
+                        <p>Blocked Users</p>
+                        <h2>1251</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="UswrList">
+    <div class="container">
+        <div class="userTable">
+            <h2 class="small">User Listing</h2>
+            <div class="tableList">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Name</th>
+                                <th>Number</th>
+                                <th>Age</th>
+                                <th>Location</th>
+                                <th>User Type</th>
+                                <th>Uploaded On</th>
+                                <th>Status</th>
+                                <th>Block</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                          <td><span class="colorBlue">U-030</span></td>
+                          <td>Deepanshu</td>
+                          <td>9825645451</td>
+                          <td>15</td>
+                          <td>Meerut,U.P</td>
+                          <td>Customer</td>
+                          <td>08/06/2021</td>
+                          <td><span class="colorGreen">Active</span></td>
+                          <td>
+                            <div class="content">
+                                <label class="switch">
+                                  <input type="checkbox" checked>
+                                  <span class="slider round"></span>
+                                </label>
+                              </div>
+                          </td>
+                          <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="colorBlue">U-030</span></td>
+                                <td>Deepanshu</td>
+                                <td>9825645451</td>
+                                <td>15</td>
+                                <td>Meerut,U.P</td>
+                                <td>Customer</td>
+                                <td>08/06/2021</td>
+                                <td><span class="colorGreen">Active</span></td>
+                                <td>
+                                  <div class="content">
+                                      <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>
+                                    </div>
+                                </td>
+                                <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="colorBlue">U-030</span></td>
+                                    <td>Deepanshu</td>
+                                    <td>9825645451</td>
+                                    <td>15</td>
+                                    <td>Meerut,U.P</td>
+                                    <td>Customer</td>
+                                    <td>08/06/2021</td>
+                                    <td><span class="">Inactive</span></td>
+                                    <td>
+                                      <div class="content">
+                                          <label class="switch">
+                                            <input type="checkbox" >
+                                            <span class="slider round"></span>
+                                          </label>
+                                        </div>
+                                    </td>
+                                    <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td><span class="colorBlue">U-030</span></td>
+                                        <td>Deepanshu</td>
+                                        <td>9825645451</td>
+                                        <td>15</td>
+                                        <td>Meerut,U.P</td>
+                                        <td>Customer</td>
+                                        <td>08/06/2021</td>
+                                        <td><span class="colorGreen">Active</span></td>
+                                        <td>
+                                          <div class="content">
+                                              <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                              </label>
+                                            </div>
+                                        </td>
+                                        <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td><span class="colorBlue">U-030</span></td>
+                                            <td>Deepanshu</td>
+                                            <td>9825645451</td>
+                                            <td>15</td>
+                                            <td>Meerut,U.P</td>
+                                            <td>Customer</td>
+                                            <td>08/06/2021</td>
+                                            <td><span class="">Inactive</span></td>
+                                            <td>
+                                              <div class="content">
+                                                  <label class="switch">
+                                                    <input type="checkbox" >
+                                                    <span class="slider round"></span>
+                                                  </label>
+                                                </div>
+                                            </td>
+                                            <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                                              </tr>
+                                              <tr>
+                                                <td><span class="colorBlue">U-030</span></td>
+                                                <td>Deepanshu</td>
+                                                <td>9825645451</td>
+                                                <td>15</td>
+                                                <td>Meerut,U.P</td>
+                                                <td>Customer</td>
+                                                <td>08/06/2021</td>
+                                                <td><span class="colorGreen">Active</span></td>
+                                                <td>
+                                                  <div class="content">
+                                                      <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                      </label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><span class="colorBlue">U-030</span></td>
+                                                    <td>Deepanshu</td>
+                                                    <td>9825645451</td>
+                                                    <td>15</td>
+                                                    <td>Meerut,U.P</td>
+                                                    <td>Customer</td>
+                                                    <td>08/06/2021</td>
+                                                    <td><span class="">Inactive</span></td>
+                                                    <td>
+                                                      <div class="content">
+                                                          <label class="switch">
+                                                            <input type="checkbox" >
+                                                            <span class="slider round"></span>
+                                                          </label>
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="javascript:void(0)"><img src="assets/imgs/eye.svg" alt="eye"></a></td>
+                                                      </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+             
+            </div>
+            <div class="paginations paginations2"> 
+                <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li><a href="javascript:void(0)"  class="colorBlack"><</a></li>
+                    <li><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)" class="active">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li><a href="javascript:void(0)">6</a></li>
+                    <li><a href="javascript:void(0)" class="colorBlack">></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer>
+
+</app-footer>
